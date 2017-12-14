@@ -1,0 +1,10 @@
+<div class="col-sm-12">
+    <div class="col-sm-3" *ngFor="let m of mainMenu" style="padding: 2px">
+
+        <div class="panel panel-default">
+            <div class="panel-body" (click)="onMenuClick(m)">
+                {{m | uppercase}}
+            </div>
+        </div>
+    </div>
+</div>
